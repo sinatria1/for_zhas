@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    font-family: 'Indie Flower', cursive;
+    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
+    min-height: 100vh;
+}
+
+#message{
+    font-size: 24px ;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button{
+    background-color: rgb(228, 131, 184);
+    color: rgb(97, 15, 63);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.no{
+    position: absolute;
+}
