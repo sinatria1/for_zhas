@@ -18,5 +18,5 @@ nbtn.addEventListener('click', ()=>{
 });
 
 ybtn.addEventListener('click', ()=>{
-    mdiv.textContent = "Woahhh i love you too zhas";
+    mdiv.textContent = "Woahhh STFU !!! i love you too zhas";
 });
