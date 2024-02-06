@@ -1,37 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
 
 body{
-    font-family: 'Indie Flower', cursive;
-    background: conic-gradient(from -90deg at 50% 105%, white, orchid);
-    min-height: 100vh;
+    background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+    height:100vh ;
 }
 
-#message{
-    font-size: 24px ;
-    text-align: center;
-    margin-top: 100px;
-
+.app{
+    background: conic-gradient(at 0% 0%, snow, white);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-#buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.app h1{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
 }
 
-.button{
-    background-color: rgb(228, 131, 184);
-    color: rgb(97, 15, 63);
-    border: none;
-    border-radius: 5px;
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
     font-size: 18px;
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    font-family: inherit;
-    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.5);
+    font-weight: 600;
 }
 
-.no{
-    position: absolute;
+.btn{
+    background: conic-gradient(at 0% 0%, snow, white);
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    background: #222;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
 }
