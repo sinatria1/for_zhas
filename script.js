@@ -9,7 +9,7 @@ const question = [
     ]
 },
 {
-    question : 'Who does have the prettiest voice?',
+    question : 'Who has the prettiest voice in the world?',
     answer : [
         { text: 'Zhas', correct: true},
         { text: 'Sofia Reyes', correct: false},
